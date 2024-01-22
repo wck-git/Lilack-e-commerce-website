@@ -1,0 +1,79 @@
+.checkoutContainer form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.checkoutContainer form > * {
+  flex: 1 1 45%;
+}
+
+.deliveryForm fieldset,
+.paymentForm fieldset {
+  padding: 1.5em;
+  border-radius: 1vmin;
+  width: 100%;
+  max-width: 600px;
+}
+
+.deliveryForm label,
+.paymentForm label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.deliveryForm input,
+.paymentForm input {
+  display: block;
+  width: 80%;
+  margin-bottom: 0.65em;
+  min-height: 3.5vmin;
+}
+
+.cardIcons + input {
+  margin-top: 0.5em;
+}
+
+.actionContainer {
+  text-align: center;
+}
+
+.actionContainer span {
+  padding-right: 1em;
+}
+
+.actionContainer .actionBtn {
+  padding: 1em;
+  margin-top: 1em;
+  width: 100%;
+  max-width: 150px;
+}
+
+#csc {
+  width: 100%;
+  max-width: 8ch;
+}
+
+.paymentForm .expiration {
+  display: inline;
+  width: 100%;
+  max-width: 8ch;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+.checkoutContainer .errorMessages {
+  text-align: left;
+}
+
+@media (max-width: 750px){
+  .checkoutContainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    padding: 0 !important;
+  }
+}

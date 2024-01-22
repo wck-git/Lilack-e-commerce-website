@@ -1,0 +1,17 @@
+.question-heading {
+  text-align: center;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding-block: 0.75em;
+}
+
+.questions h4 {
+  margin-bottom: 0;
+}
+.questions p {
+  margin-top: 0.5em;
+}
+
+.questions ol {
+  padding-left: 1em;
+}

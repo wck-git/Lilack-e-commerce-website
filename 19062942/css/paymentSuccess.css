@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.5em;
+}
+
+.paymentSuccessContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paymentSuccessForm {
+  text-align: center;
+  padding: 5em 7em;
+  border: 2px solid #ddd;
+  border-radius: 5vmin;
+}
+
+.paymentSuccessIcon {
+  font-size: 7.5rem;
+  color: green;
+}
+
+.paymentSuccessContainer span {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.homeButton {
+  margin-top: 3em;
+}
+
+.homeButton a {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.75em 1.25em;
+}
+
+.homeButton:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 650px){
+  .paymentSuccessForm {
+    padding: 2.5em 3.5em;
+  }
+}

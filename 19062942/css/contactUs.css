@@ -1,0 +1,26 @@
+.companyLogo {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1em;
+}
+
+.contactUsFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.contactUsFlex > * {
+  flex: 1 1 100%;
+}
+
+.contactUsInformation > * {
+  margin: 0.75em;
+}
+
+@media (max-width: 750px) {
+  .contactUsFlex {
+    flex-direction: column;
+  }
+}

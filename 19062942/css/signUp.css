@@ -1,0 +1,49 @@
+.breadCrumbTrail li {
+  display: inline-block;
+}
+
+.breadCrumbTrail li::after {
+  content: " > ";
+}
+
+.breadCrumbTrail li:last-child::after {
+  content: none;
+}
+
+.signUpForm {
+  text-align: center;
+}
+
+.signUpForm form {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
+
+.signUpForm fieldset {
+  padding: 1.5em;
+  border-radius: 2vmin;
+}
+
+.signUpForm label{
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.signUpForm input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.65em;
+  min-height: 3.5vmin;
+}
+
+.signUpForm .signUpBtnContainer{
+  text-align: center;
+}
+
+.signUpForm .signUpBtn{
+  margin-top: 1em;
+  width: 100%;
+  max-width: 150px;
+}

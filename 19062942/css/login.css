@@ -1,0 +1,53 @@
+.breadCrumbTrail li {
+  display: inline-block;
+}
+
+.breadCrumbTrail li::after {
+  content: " > ";
+}
+
+.breadCrumbTrail li:last-child::after {
+  content: none;
+}
+
+.loginForm {
+  text-align: center;
+}
+
+.loginForm form {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
+
+.loginForm fieldset {
+  padding: 1.5em;
+  border-radius: 2vmin;
+}
+
+.loginForm label{
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.loginForm input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.65em;
+  min-height: 3.5vmin;
+}
+
+.loginForm .loginBtnContainer{
+  text-align: center;
+}
+
+.loginForm .loginBtn{
+  margin-top: 1em;
+  width: 100%;
+  max-width: 150px;
+}
+
+.dontHaveAccountSection span{
+  padding-right: 1em;
+}

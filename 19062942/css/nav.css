@@ -1,0 +1,164 @@
+.navFlex {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navFlex a {
+  display: block;
+}
+
+.dropDownOccasion,
+.dropDownAddOnItems {
+  position: relative;
+}
+
+.dropDownOccasion ul,
+.dropDownAddOnItems ul {
+  width: 100%;
+  z-index: 99;
+  background: var(--clr-secondary);
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  right: 0.75em;
+  display: none;
+}
+.dropDownOccasion ul a,
+.dropDownAddOnItems ul a{
+  display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0.25em;
+}
+
+.navFlex a::after,
+.navFlex label::after {
+  content: "|";
+  padding: 0.7em;
+}
+
+.navFlex a:last-child::after,
+.navFlex label:last-child:after {
+  content: none;
+}
+
+.navFlex label {
+  cursor: pointer;
+}
+
+.dropDownOccasion ul,
+.dropDownAddOnItems ul {
+  display: none;
+}
+
+.dropDownOccasion:hover > ul,
+.dropDownAddOnItems:hover > ul {
+  display: block;
+}
+
+/* hamburger pop up */
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  padding: 1.25em 1em;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 2.5%;
+}
+
+.nav-toggle-label:hover > span,
+.nav-toggle-label:hover > span::before,
+.nav-toggle-label:hover > span::after {
+  background-color: var(--clr-gray);
+  vertical-align: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  width: 1.5rem;
+  height: 3.5px;
+  background-color: var(--clr-black);
+  display: block;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 200%;
+}
+
+.nav-toggle-label span::after {
+  top: 200%;
+}
+
+@media (max-width: 750px) {
+  nav,
+  .headerHotline {
+    display: none;
+  }
+
+  .navFlex a::after,
+  .navFlex label::after {
+    content: none;
+  }
+
+  .navFlex {
+    margin-top: 0.5em;
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+
+  .navFlex label {
+    display: block;
+  }
+
+  .navFlex a,
+  .navFlex label {
+    margin-bottom: 0.5em;
+  }
+  .dropDownOccasion ul,
+  .dropDownAddOnItems ul {
+    position: static;
+    text-align: right;
+  }
+
+  .dropDownOccasion:hover > ul,
+  .dropDownAddOnItems:hover > ul {
+    display: none;
+  }
+
+  #occasionCheckBox:checked ~ ul,
+  #addOnItemsCheckBox:checked ~ ul {
+    display: block;
+  }
+
+  /* hamburger icon */
+  .nav-toggle-label {
+    display: inline-block;
+    top: 2.5%;
+    right: 0%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-toggle-label {
+    padding: 1.25em 0.5em;
+    top: 2.4%;
+  }
+}

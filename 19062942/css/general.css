@@ -1,0 +1,162 @@
+:root {
+  --clr-black: #000;
+  --clr-gray: #555;
+  --clr-primary: #d5d4f5;
+  --clr-secondary: #E9E9FA;
+  --clr-tertiary: #9900cc;
+  --clr-background: #faf4fc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--clr-secobackgroundndary);
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-black);
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.5;
+}
+
+/* CONTAINER */
+main{
+  padding-block: 1.5em;
+}
+
+section {
+  padding: 0.5em 0 0.5em;
+}
+
+.headerFooterContainer {
+  padding: 1em 1.5em;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.categoryTitle{
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+/* ICON */
+.icon {
+  font-size: 2rem;
+}
+
+.btn{
+  background-color: var(--clr-primary);
+  padding: 0.75em 1.5em;
+  border-radius: 1vmin;
+  width: 100%;
+  max-width: 100px;
+}
+
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus{
+  opacity: 0.8;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* IMAGES */
+.productImage {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* BACK TO TOP BUTTON */
+#backToTopContainer{
+  cursor: pointer;
+  position: fixed;
+  bottom: 5vmin;
+  right: 5vmin;
+  z-index: 999;
+  display: none;
+}
+
+#backToTopButton{
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+#backToTopButtonIcon{
+ font-size: 5vmin;
+ color: #676597;
+}
+
+#backToTopText{
+color: #d5d4f5;
+}
+
+.backToTopContainer:hover{
+  opacity: 0.8;
+}
+
+/* ERROR MESSAGES */
+.errorMessages{
+  color: red;
+  display: block;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* SUCCESS MESSAGES */
+.successMessages{
+  color: lawngreen;
+  display: block;
+  font-size: 0.9em;
+}
+
+@media (max-width: 750px) {
+  .headerFooterContainer {
+    padding: 1em 0.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .container{
+    width: 90%;
+  }
+}

@@ -1,0 +1,13 @@
+.logoutBtnContainer #logoutBtn{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+.logoutIcon{
+    font-size: 5rem;
+}
+
+.logoutForm {
+    text-align: center;
+}

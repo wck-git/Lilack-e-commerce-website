@@ -1,0 +1,11 @@
+.breadCrumbTrail li {
+  display: inline-block;
+}
+
+.breadCrumbTrail li::after {
+  content: " > ";
+}
+
+.breadCrumbTrail li:last-child::after {
+  content: none;
+}
